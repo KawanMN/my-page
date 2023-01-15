@@ -3,9 +3,9 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import logo from './assets/homeicon.svg'
+import km from './assets/km.svg'
 import './Barra.css'
 import { Link } from 'react-router-dom';
-import Login from '../Login';
 
 export default function Barra() {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -22,7 +22,7 @@ export default function Barra() {
         <div className='geral'>
 
             <Link to={'/'}>
-                <img className='logo' src={logo} alt="Imagem da home" />
+                <img className='logo' src={km} alt="Imagem da home" />
             </Link>
 
 
@@ -49,7 +49,6 @@ export default function Barra() {
                 <MenuItem onClick={handleClose}>Sobre</MenuItem>
                 <MenuItem onClick={handleClose}>Projetos</MenuItem>
             </Menu>
-            <Login />
         </div>
 
     );
